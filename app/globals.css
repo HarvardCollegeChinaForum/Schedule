@@ -1,0 +1,411 @@
+:root {
+  --bg: #efe6d7;
+  --paper: #fbf6ee;
+  --paper-strong: #fffaf3;
+  --ink: #231814;
+  --muted: #6d5a50;
+  --line: rgba(86, 52, 39, 0.14);
+  --accent: #8b1e2d;
+  --accent-deep: #64131f;
+  --accent-soft: rgba(139, 30, 45, 0.08);
+  --gold: #b48a47;
+  --shadow: 0 26px 60px rgba(67, 40, 29, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(180, 138, 71, 0.12), transparent 24%),
+    linear-gradient(180deg, #f7f1e7 0%, var(--bg) 100%);
+  font-family: var(--font-body), sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pageShell {
+  width: min(1440px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 20px 0 48px;
+}
+
+.pageTopbar {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.pageTitle {
+  margin: 0;
+  padding: 10px 6px 2px;
+}
+
+.languageToggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 250, 242, 0.9);
+  box-shadow: 0 10px 24px rgba(67, 40, 29, 0.08);
+}
+
+.languageToggle button {
+  min-width: 68px;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.languageToggle button.isActive {
+  background: linear-gradient(135deg, var(--accent), var(--accent-deep));
+  color: #fff8ef;
+}
+
+.pageTitleEyebrow,
+.sectionEyebrow,
+.dayLabel,
+.timelineTime span,
+.trackVenue {
+  margin: 0;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.72rem;
+}
+
+.pageTitle h1,
+.directionsTool h2,
+.dayBandHeader h2,
+.timelineIntro h3,
+.trackTitle {
+  margin: 0;
+  font-family: var(--font-display), serif;
+}
+
+.pageTitle h1 {
+  margin-top: 6px;
+  font-size: clamp(4rem, 8vw, 7.25rem);
+  line-height: 0.88;
+}
+
+.pageTitleEyebrow {
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  font-weight: 700;
+}
+
+.directionsTool,
+.dayBand {
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255, 252, 247, 0.95), rgba(250, 245, 236, 0.95));
+  box-shadow: var(--shadow);
+}
+
+.directionsTool {
+  margin-bottom: 22px;
+  padding: 22px;
+}
+
+.directionsTool h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.directionsTool p,
+.directionMeta p,
+.dayVenue,
+.sessionDescription,
+.sessionVenue,
+.singleSessionMeta p {
+  color: var(--muted);
+}
+
+.directionFields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.directionFields span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.directionFields select {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1px solid rgba(100, 19, 31, 0.14);
+  border-radius: 14px;
+  background: #fffdf9;
+  color: var(--ink);
+  font: inherit;
+}
+
+.directionMeta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0 20px;
+}
+
+.directionMeta strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+
+.buttonPrimary,
+.mapAction {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(100, 19, 31, 0.14);
+  background: #fff8f0;
+  color: var(--accent-deep);
+  font-weight: 600;
+  white-space: nowrap;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background-color 160ms ease;
+}
+
+.buttonPrimary:hover,
+.mapAction:hover {
+  transform: translateY(-1px);
+  border-color: rgba(100, 19, 31, 0.3);
+  background: #fff3df;
+}
+
+.scheduleStack {
+  display: grid;
+  gap: 26px;
+}
+
+.dayBand {
+  padding: 26px;
+}
+
+.dayBandHeader {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.dayBandHeader h2 {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  line-height: 0.95;
+}
+
+.dayVenue {
+  max-width: 24rem;
+  margin: 0;
+  text-align: right;
+  font-weight: 500;
+}
+
+.timeline {
+  display: grid;
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.timelineRow {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.timelineTime {
+  position: sticky;
+  top: 16px;
+  padding: 18px 16px;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(139, 30, 45, 0.96), rgba(100, 19, 31, 0.94));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.timelineTime span {
+  display: block;
+  color: rgba(255, 246, 235, 0.92);
+  font-size: 0.8rem;
+}
+
+.timelineContent {
+  padding: 18px;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.session-check-in .timelineContent,
+.session-ceremony .timelineContent,
+.session-competition .timelineContent {
+  background: linear-gradient(180deg, rgba(139, 30, 45, 0.04), var(--paper));
+}
+
+.session-meal .timelineContent {
+  background: linear-gradient(180deg, rgba(180, 138, 71, 0.1), var(--paper));
+}
+
+.timelineIntro {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.timelineIntro h3 {
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+}
+
+.sessionDescription,
+.sessionVenue,
+.singleSessionMeta p {
+  margin: 8px 0 0;
+  line-height: 1.6;
+}
+
+.trackGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.trackCard {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(100, 19, 31, 0.1);
+  background: linear-gradient(180deg, rgba(139, 30, 45, 0.03), #fffdf8);
+}
+
+.trackCardTop {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.trackTitle {
+  font-size: 1.5rem;
+  line-height: 1.02;
+}
+
+.trackVenue {
+  margin-top: 8px;
+}
+
+.singleSessionMap {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 14px;
+  margin-top: 16px;
+  align-items: start;
+}
+
+.singleSessionMeta {
+  padding: 16px;
+  border-radius: 18px;
+  background: var(--paper-strong);
+  border: 1px solid rgba(100, 19, 31, 0.08);
+}
+
+.mapFrame {
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid rgba(100, 19, 31, 0.1);
+  background: #f7f0e2;
+}
+
+.mapFrame iframe {
+  display: block;
+  width: 100%;
+  height: 180px;
+  border: 0;
+}
+
+@media (max-width: 1180px) {
+  .trackGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .pageShell {
+    width: min(100% - 20px, 1440px);
+  }
+
+  .directionFields,
+  .directionMeta,
+  .timelineRow,
+  .singleSessionMap,
+  .trackGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .dayBand,
+  .directionsTool,
+  .timelineContent {
+    padding: 18px;
+  }
+
+  .pageTopbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .languageToggle {
+    align-self: flex-end;
+  }
+
+  .dayBandHeader,
+  .timelineIntro,
+  .trackCardTop {
+    display: grid;
+    gap: 12px;
+  }
+
+  .dayVenue {
+    text-align: left;
+  }
+
+  .timelineTime {
+    position: static;
+  }
+}
