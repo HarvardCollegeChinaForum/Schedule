@@ -52,7 +52,7 @@ export function DirectionsTool({ locale }: DirectionsToolProps) {
 
   const directionsUrl =
     fromVenue && toVenue
-      ? `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(fromVenue.address)}&destination=${encodeURIComponent(toVenue.address)}&travelmode=walking`
+      ? `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(fromVenue.routeTarget ?? fromVenue.address)}&destination=${encodeURIComponent(toVenue.routeTarget ?? toVenue.address)}&travelmode=walking`
       : "#";
 
   return (

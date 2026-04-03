@@ -1,3 +1,5 @@
+import { panelTracks, type PanelTrack } from "@/data/panels";
+
 export type Venue = {
   id: string;
   label: string;
@@ -5,6 +7,7 @@ export type Venue = {
   shortLabel: string;
   shortLabelZh: string;
   address: string;
+  routeTarget?: string;
   embedQuery: string;
   coordinates: {
     lat: number;
@@ -21,11 +24,7 @@ export type Session = {
   venueId?: string;
   description?: string;
   descriptionZh?: string;
-  tracks?: Array<{
-    title: string;
-    titleZh: string;
-    venueId: string;
-  }>;
+  tracks?: PanelTrack[];
 };
 
 export type DaySchedule = {
@@ -59,9 +58,10 @@ export const venues: Venue[] = [
     labelZh: "西北楼 B103",
     shortLabel: "NW B103",
     shortLabelZh: "西北楼 B103",
-    address: "52 Oxford St, Cambridge, MA 02138",
-    embedQuery: "Harvard Northwest Building B103 Cambridge MA",
-    coordinates: { lat: 42.3794, lng: -71.1169 },
+    address: "Northwest Building, 52 Oxford St, Cambridge, MA 02138",
+    routeTarget: "42.379368,-71.115918",
+    embedQuery: "42.379368,-71.115918",
+    coordinates: { lat: 42.379368, lng: -71.115918 },
   },
   {
     id: "nw-b101",
@@ -69,9 +69,21 @@ export const venues: Venue[] = [
     labelZh: "西北楼 B101",
     shortLabel: "NW B101",
     shortLabelZh: "西北楼 B101",
-    address: "52 Oxford St, Cambridge, MA 02138",
-    embedQuery: "Harvard Northwest Building B101 Cambridge MA",
-    coordinates: { lat: 42.3794, lng: -71.1169 },
+    address: "Northwest Building, 52 Oxford St, Cambridge, MA 02138",
+    routeTarget: "42.379368,-71.115918",
+    embedQuery: "42.379368,-71.115918",
+    coordinates: { lat: 42.379368, lng: -71.115918 },
+  },
+  {
+    id: "northwest-entrance",
+    label: "Northwest Building",
+    labelZh: "西北楼",
+    shortLabel: "Northwest Building",
+    shortLabelZh: "西北楼",
+    address: "Northwest Building, 52 Oxford St, Cambridge, MA 02138",
+    routeTarget: "42.379368,-71.115918",
+    embedQuery: "42.379368,-71.115918",
+    coordinates: { lat: 42.379368, lng: -71.115918 },
   },
   {
     id: "yenching-230",
@@ -123,6 +135,17 @@ export const venues: Venue[] = [
     embedQuery: "Harvard Science Center Hall D Cambridge MA",
     coordinates: { lat: 42.3763, lng: -71.1167 },
   },
+  {
+    id: "queens-head",
+    label: "Queen's Head Pub",
+    labelZh: "Queen's Head Pub",
+    shortLabel: "Queen's Head",
+    shortLabelZh: "Queen's Head",
+    address: "45 Quincy St, Cambridge, MA 02138",
+    routeTarget: "42.3759961,-71.1156477",
+    embedQuery: "42.3759961,-71.1156477",
+    coordinates: { lat: 42.3759961, lng: -71.1156477 },
+  },
 ];
 
 export const schedule: DaySchedule[] = [
@@ -158,12 +181,7 @@ export const schedule: DaySchedule[] = [
         title: "Panels 1",
         titleZh: "分论坛 1",
         type: "panel-block",
-        description: "Concurrent morning discussions.",
-        descriptionZh: "上午平行论坛。",
-        tracks: [
-          { title: "Business", titleZh: "商业", venueId: "nw-b103" },
-          { title: "Art", titleZh: "艺术", venueId: "yenching-230" },
-        ],
+        tracks: [panelTracks.business, panelTracks.journalism],
       },
       {
         id: "sat-lunch",
@@ -171,6 +189,7 @@ export const schedule: DaySchedule[] = [
         title: "Lunch",
         titleZh: "午餐",
         type: "meal",
+        venueId: "northwest-entrance",
       },
       {
         id: "sat-panels-2",
@@ -178,11 +197,7 @@ export const schedule: DaySchedule[] = [
         title: "Panels 2",
         titleZh: "分论坛 2",
         type: "panel-block",
-        tracks: [
-          { title: "Strategic Leadership", titleZh: "战略领导力", venueId: "nw-b103" },
-          { title: "Building Bridges", titleZh: "搭建桥梁", venueId: "yenching-230" },
-          { title: "Latin America", titleZh: "拉丁美洲", venueId: "nw-b101" },
-        ],
+        tracks: [panelTracks.chineseWisdom, panelTracks.bridges, panelTracks.latinAmerica],
       },
       {
         id: "sat-panels-3",
@@ -190,11 +205,7 @@ export const schedule: DaySchedule[] = [
         title: "Panels 3",
         titleZh: "分论坛 3",
         type: "panel-block",
-        tracks: [
-          { title: "Venture Capital", titleZh: "风险投资", venueId: "nw-b103" },
-          { title: "Journalism", titleZh: "新闻", venueId: "yenching-230" },
-          { title: "Sustainability", titleZh: "可持续发展", venueId: "nw-b101" },
-        ],
+        tracks: [panelTracks.ventureCapital, panelTracks.art, panelTracks.sustainability],
       },
       {
         id: "sat-panels-4",
@@ -202,10 +213,7 @@ export const schedule: DaySchedule[] = [
         title: "Panels 4",
         titleZh: "分论坛 4",
         type: "panel-block",
-        tracks: [
-          { title: "Biotech", titleZh: "生物科技", venueId: "nw-b103" },
-          { title: "Africa", titleZh: "非洲", venueId: "yenching-230" },
-        ],
+        tracks: [panelTracks.biotech, panelTracks.africa],
       },
     ],
   },
@@ -241,11 +249,7 @@ export const schedule: DaySchedule[] = [
         title: "Panels 5",
         titleZh: "分论坛 5",
         type: "panel-block",
-        tracks: [
-          { title: "Tech", titleZh: "科技", venueId: "science-b" },
-          { title: "History", titleZh: "历史", venueId: "science-c" },
-          { title: "Southeast Asia", titleZh: "东南亚", venueId: "science-d" },
-        ],
+        tracks: [panelTracks.aiScience, panelTracks.history, panelTracks.southeastAsia],
       },
       {
         id: "sun-panels-6",
@@ -253,11 +257,7 @@ export const schedule: DaySchedule[] = [
         title: "Panels 6",
         titleZh: "分论坛 6",
         type: "panel-block",
-        tracks: [
-          { title: "Film", titleZh: "电影", venueId: "science-b" },
-          { title: "AI", titleZh: "人工智能", venueId: "science-c" },
-          { title: "Global Health", titleZh: "全球健康", venueId: "science-d" },
-        ],
+        tracks: [panelTracks.film, panelTracks.agenticAi, panelTracks.globalHealth],
       },
       {
         id: "sun-lunch",
@@ -265,6 +265,7 @@ export const schedule: DaySchedule[] = [
         title: "Lunch",
         titleZh: "午餐",
         type: "meal",
+        venueId: "queens-head",
       },
       {
         id: "sun-panels-7",
@@ -272,11 +273,7 @@ export const schedule: DaySchedule[] = [
         title: "Panels 7",
         titleZh: "分论坛 7",
         type: "panel-block",
-        tracks: [
-          { title: "Geopolitics", titleZh: "地缘政治", venueId: "science-b" },
-          { title: "Fintech / Crypto", titleZh: "金融科技 / 加密货币", venueId: "science-c" },
-          { title: "Chinese Entrepreneurship", titleZh: "中国创业", venueId: "science-d" },
-        ],
+        tracks: [panelTracks.geopolitics, panelTracks.fintech, panelTracks.globalOutlook],
       },
       {
         id: "sun-panels-8",
@@ -284,11 +281,7 @@ export const schedule: DaySchedule[] = [
         title: "Panels 8",
         titleZh: "分论坛 8",
         type: "panel-block",
-        tracks: [
-          { title: "Economics", titleZh: "经济", venueId: "science-b" },
-          { title: "Soft Power", titleZh: "软实力", venueId: "science-c" },
-          { title: "Consumer", titleZh: "消费", venueId: "science-d" },
-        ],
+        tracks: [panelTracks.economics, panelTracks.softPower, panelTracks.consumer],
       },
       {
         id: "sun-closing",
@@ -316,7 +309,7 @@ export function getSessionRoutes(locale: Locale) {
       }));
     }
 
-    if (!session.venueId || session.type === "meal") {
+    if (!session.venueId) {
       return [];
     }
 

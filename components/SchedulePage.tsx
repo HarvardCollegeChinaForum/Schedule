@@ -23,16 +23,16 @@ export function SchedulePage() {
           schedule: "2026 日程",
           openInMaps: "在地图中打开",
           venuePending: "地点待定",
-          concurrent: "平行论坛。",
           language: "语言",
+          speakers: "嘉宾",
         }
       : {
           forum: "Harvard College China Forum",
           schedule: "2026 Schedule",
           openInMaps: "Open in Maps",
           venuePending: "Venue to be announced",
-          concurrent: "Concurrent sessions.",
           language: "Language",
+          speakers: "Speakers",
         };
 
   return (
@@ -71,7 +71,6 @@ export function SchedulePage() {
                 <p className="dayLabel">{locale === "zh" ? day.labelZh : day.label}</p>
                 <h2>{day.dateLabel}</h2>
               </div>
-              <p className="dayVenue">{locale === "zh" ? day.venueAnchorZh : day.venueAnchor}</p>
             </header>
 
             <div className="timeline">
@@ -89,11 +88,11 @@ export function SchedulePage() {
                         <div>
                           <h3>{locale === "zh" ? session.titleZh : session.title}</h3>
                           {session.tracks ? (
-                            <p className="sessionDescription">
-                              {locale === "zh"
-                                ? session.descriptionZh ?? copy.concurrent
-                                : session.description ?? copy.concurrent}
-                            </p>
+                            session.description || session.descriptionZh ? (
+                              <p className="sessionDescription">
+                                {locale === "zh" ? session.descriptionZh : session.description}
+                              </p>
+                            ) : null
                           ) : (
                             <p className="sessionVenue">
                               {venue
@@ -107,7 +106,7 @@ export function SchedulePage() {
                         {!session.tracks && venue ? (
                           <a
                             className="mapAction"
-                            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(venue.address)}`}
+                            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(venue.routeTarget ?? venue.address)}`}
                             target="_blank"
                             rel="noreferrer"
                           >
@@ -122,12 +121,12 @@ export function SchedulePage() {
                             const trackVenue = getVenue(track.venueId);
 
                             return (
-                              <article key={`${session.id}-${track.title}`} className="trackCard">
-                                <div className="trackCardTop">
-                                  <div>
-                                    <p className="trackTitle">
+                              <article key={`${session.id}-${track.title}`} className="trackRow">
+                                <div className="trackRowTop">
+                                  <div className="trackHeading">
+                                    <h4 className="trackTitle">
                                       {locale === "zh" ? track.titleZh : track.title}
-                                    </p>
+                                    </h4>
                                     <p className="trackVenue">
                                       {trackVenue
                                         ? locale === "zh"
@@ -138,19 +137,37 @@ export function SchedulePage() {
                                   </div>
                                   <a
                                     className="mapAction"
-                                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(trackVenue?.address ?? "")}`}
+                                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(trackVenue?.routeTarget ?? trackVenue?.address ?? "")}`}
                                     target="_blank"
                                     rel="noreferrer"
                                   >
                                     {copy.openInMaps}
                                   </a>
                                 </div>
-                                {trackVenue ? (
-                                  <MapEmbed
-                                    query={trackVenue.embedQuery}
-                                    title={`${locale === "zh" ? track.titleZh : track.title} map`}
-                                  />
-                                ) : null}
+                                <section className="trackDescription">
+                                  <p lang={locale === "zh" ? "zh-Hans" : undefined}>
+                                    {locale === "zh" ? track.descriptionZh : track.description}
+                                  </p>
+                                </section>
+                                <div className="speakerBlock">
+                                  <p className="trackMetaLabel">{copy.speakers}</p>
+                                  <div className="speakerList">
+                                    {track.speakers.map((speaker) => (
+                                      <p
+                                        key={`${session.id}-${track.title}-${speaker.name}-${speaker.title}`}
+                                        className="speakerItem"
+                                        lang={locale === "zh" ? "zh-Hans" : undefined}
+                                      >
+                                        <strong className="speakerName">
+                                          {locale === "zh" ? speaker.nameZh : speaker.name}
+                                        </strong>
+                                        {locale === "zh"
+                                          ? `（${speaker.titleZh}）`
+                                          : ` (${speaker.title})`}
+                                      </p>
+                                    ))}
+                                  </div>
+                                </div>
                               </article>
                             );
                           })}
