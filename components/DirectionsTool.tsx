@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { getSessionRoutes, type Locale, venues } from "@/data/schedule";
 
 type DirectionsToolProps = {
@@ -8,14 +8,27 @@ type DirectionsToolProps = {
 };
 
 export function DirectionsTool({ locale }: DirectionsToolProps) {
-  const sessionRoutes = getSessionRoutes(locale);
+  const sessionRoutes = useMemo(() => getSessionRoutes(locale), [locale]);
   const [fromId, setFromId] = useState(sessionRoutes[0]?.id ?? "");
   const [toId, setToId] = useState(sessionRoutes[1]?.id ?? "");
 
   useEffect(() => {
-    setFromId(sessionRoutes[0]?.id ?? "");
-    setToId(sessionRoutes[1]?.id ?? sessionRoutes[0]?.id ?? "");
-  }, [locale, sessionRoutes]);
+    const hasFrom = sessionRoutes.some((route) => route.id === fromId);
+    const nextFromId = hasFrom ? fromId : (sessionRoutes[0]?.id ?? "");
+
+    if (!hasFrom && nextFromId !== fromId) {
+      setFromId(nextFromId);
+    }
+
+    const hasTo = sessionRoutes.some((route) => route.id === toId);
+    const fallbackToId =
+      sessionRoutes.find((route) => route.id !== nextFromId)?.id ?? nextFromId;
+    const nextToId = hasTo ? toId : fallbackToId;
+
+    if (!hasTo && nextToId !== toId) {
+      setToId(nextToId);
+    }
+  }, [fromId, toId, sessionRoutes]);
 
   useEffect(() => {
     if (fromId !== toId) {
@@ -26,7 +39,7 @@ export function DirectionsTool({ locale }: DirectionsToolProps) {
     if (fallback) {
       setToId(fallback);
     }
-  }, [fromId, toId]);
+  }, [fromId, toId, sessionRoutes]);
 
   const fromRoute = sessionRoutes.find((route) => route.id === fromId);
   const toRoute = sessionRoutes.find((route) => route.id === toId);

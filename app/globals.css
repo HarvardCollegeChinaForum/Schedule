@@ -178,7 +178,8 @@ a {
 
 
 .buttonPrimary,
-.mapAction {
+.mapAction,
+.detailToggle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -189,7 +190,9 @@ a {
   background: #fff8f0;
   color: var(--accent-deep);
   font-weight: 600;
+  font: inherit;
   white-space: nowrap;
+  cursor: pointer;
   transition:
     transform 160ms ease,
     border-color 160ms ease,
@@ -197,7 +200,8 @@ a {
 }
 
 .buttonPrimary:hover,
-.mapAction:hover {
+.mapAction:hover,
+.detailToggle:hover {
   transform: translateY(-1px);
   border-color: rgba(100, 19, 31, 0.3);
   background: #fff3df;
@@ -301,6 +305,7 @@ a {
 .trackHeading {
   display: grid;
   gap: 8px;
+  min-width: 0;
 }
 
 .trackTitle {
@@ -316,6 +321,24 @@ a {
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.trackActions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.detailToggle {
+  min-height: 38px;
+  padding: 0 14px;
+  background: transparent;
+}
+
+.trackDetails {
+  display: grid;
+  gap: 14px;
+  padding-top: 4px;
 }
 
 .trackDescription p {
@@ -416,6 +439,15 @@ a {
   .trackRowTop {
     display: grid;
     gap: 12px;
+  }
+
+  .trackActions {
+    justify-content: stretch;
+  }
+
+  .detailToggle,
+  .mapAction {
+    width: fit-content;
   }
 
   .timelineTime {

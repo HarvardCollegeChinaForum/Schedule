@@ -15,6 +15,7 @@ function getFallbackVenue(dayId: string) {
 
 export function SchedulePage() {
   const [locale, setLocale] = useState<Locale>("en");
+  const [expandedTracks, setExpandedTracks] = useState<Record<string, boolean>>({});
 
   const copy =
     locale === "zh"
@@ -25,6 +26,9 @@ export function SchedulePage() {
           venuePending: "地点待定",
           language: "语言",
           speakers: "嘉宾",
+          expand: "展开详情",
+          collapse: "收起详情",
+          detailsLabel: "论坛详情",
         }
       : {
           forum: "Harvard College China Forum",
@@ -33,7 +37,17 @@ export function SchedulePage() {
           venuePending: "Venue to be announced",
           language: "Language",
           speakers: "Speakers",
+          expand: "Show details",
+          collapse: "Hide details",
+          detailsLabel: "Panel details",
         };
+
+  function toggleTrack(trackId: string) {
+    setExpandedTracks((current) => ({
+      ...current,
+      [trackId]: !current[trackId],
+    }));
+  }
 
   return (
     <main className="pageShell">
@@ -94,13 +108,20 @@ export function SchedulePage() {
                               </p>
                             ) : null
                           ) : (
-                            <p className="sessionVenue">
-                              {venue
-                                ? locale === "zh"
-                                  ? venue.labelZh
-                                  : venue.label
-                                : copy.venuePending}
-                            </p>
+                            <>
+                              <p className="sessionVenue">
+                                {venue
+                                  ? locale === "zh"
+                                    ? venue.labelZh
+                                    : venue.label
+                                  : copy.venuePending}
+                              </p>
+                              {session.description || session.descriptionZh ? (
+                                <p className="sessionDescription">
+                                  {locale === "zh" ? session.descriptionZh : session.description}
+                                </p>
+                              ) : null}
+                            </>
                           )}
                         </div>
                         {!session.tracks && venue ? (
@@ -119,9 +140,13 @@ export function SchedulePage() {
                         <div className="trackGrid">
                           {session.tracks.map((track) => {
                             const trackVenue = getVenue(track.venueId);
+                            const trackId = `${session.id}-${track.venueId}`;
+                            const isExpanded = expandedTracks[trackId] ?? false;
+                            const trackDescription =
+                              locale === "zh" ? track.descriptionZh : track.description;
 
                             return (
-                              <article key={`${session.id}-${track.title}`} className="trackRow">
+                              <article key={trackId} className="trackRow">
                                 <div className="trackRowTop">
                                   <div className="trackHeading">
                                     <h4 className="trackTitle">
@@ -144,30 +169,51 @@ export function SchedulePage() {
                                     {copy.openInMaps}
                                   </a>
                                 </div>
-                                <section className="trackDescription">
-                                  <p lang={locale === "zh" ? "zh-Hans" : undefined}>
-                                    {locale === "zh" ? track.descriptionZh : track.description}
-                                  </p>
-                                </section>
-                                <div className="speakerBlock">
-                                  <p className="trackMetaLabel">{copy.speakers}</p>
-                                  <div className="speakerList">
-                                    {track.speakers.map((speaker) => (
-                                      <p
-                                        key={`${session.id}-${track.title}-${speaker.name}-${speaker.title}`}
-                                        className="speakerItem"
-                                        lang={locale === "zh" ? "zh-Hans" : undefined}
-                                      >
-                                        <strong className="speakerName">
-                                          {locale === "zh" ? speaker.nameZh : speaker.name}
-                                        </strong>
-                                        {locale === "zh"
-                                          ? `（${speaker.titleZh}）`
-                                          : ` (${speaker.title})`}
-                                      </p>
-                                    ))}
-                                  </div>
+                                <div className="trackActions">
+                                  <button
+                                    type="button"
+                                    className="detailToggle"
+                                    aria-expanded={isExpanded}
+                                    aria-controls={`${trackId}-details`}
+                                    onClick={() => toggleTrack(trackId)}
+                                  >
+                                    {isExpanded ? copy.collapse : copy.expand}
+                                  </button>
                                 </div>
+                                {isExpanded ? (
+                                  <div
+                                    id={`${trackId}-details`}
+                                    className="trackDetails"
+                                    aria-label={copy.detailsLabel}
+                                  >
+                                    {trackDescription ? (
+                                      <section className="trackDescription">
+                                        <p lang={locale === "zh" ? "zh-Hans" : undefined}>
+                                          {trackDescription}
+                                        </p>
+                                      </section>
+                                    ) : null}
+                                    <div className="speakerBlock">
+                                      <p className="trackMetaLabel">{copy.speakers}</p>
+                                      <div className="speakerList">
+                                        {track.speakers.map((speaker) => (
+                                          <p
+                                            key={`${session.id}-${track.title}-${speaker.name}-${speaker.title}`}
+                                            className="speakerItem"
+                                            lang={locale === "zh" ? "zh-Hans" : undefined}
+                                          >
+                                            <strong className="speakerName">
+                                              {locale === "zh" ? speaker.nameZh : speaker.name}
+                                            </strong>
+                                            {locale === "zh"
+                                              ? `（${speaker.titleZh}）`
+                                              : ` (${speaker.title})`}
+                                          </p>
+                                        ))}
+                                      </div>
+                                    </div>
+                                  </div>
+                                ) : null}
                               </article>
                             );
                           })}

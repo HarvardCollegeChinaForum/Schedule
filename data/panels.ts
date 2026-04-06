@@ -82,10 +82,8 @@ This panel brings together leading journalists and media leaders to examine how 
     title: "Chinese Wisdom and Innovation",
     titleZh: "东方智慧与战略创新",
     venueId: "nw-b103",
-    description:
-      "This Chinese-language panel brings together founders, operators, and investors to discuss how Chinese business thinking is being translated into modern strategy and brand building. The conversation focuses on leadership, growth, and how cultural intuition can become an engine for innovation.",
-    descriptionZh:
-      "这场中文分论坛汇聚企业家、经营者与投资人，探讨中国式商业智慧如何转化为当代战略、品牌塑造与组织创新。讨论将聚焦领导力、增长方法，以及文化洞察如何真正转化为创新能力。",
+    description: "",
+    descriptionZh: "",
     speakers: [
       speaker(
         "Yuan Zou",
@@ -178,8 +176,11 @@ Speakers will share concrete frameworks: from evaluating product moats and go-to
 The discussion will explore both historical turning points and present-day challenges, with particular attention to how museums, scholars, and public-facing initiatives make Chinese art accessible and meaningful to diverse audiences. Topics include the impact of changing ethical standards, the role of exhibitions and events such as Asia Week New York, and the growing importance of digital curation and online platforms in expanding access, interpretation, and global engagement. The panel will also consider how institutions can connect with the public through innovative storytelling, education, and cross-institutional partnerships.
 
 Looking ahead, the conversation turns to the broader significance of traditional Chinese art today: how it can foster cultural understanding, reach new publics, and remain relevant in a rapidly changing, digitally connected world. It will also consider how scholarship can become more inclusive and publicly engaged, and how art, museums, and academic collaboration might serve as bridges for dialogue and mutual understanding between East and West in the years to come.`,
-    descriptionZh:
-      "本场论坛聚焦西方与中国艺术相遇的历史如何影响作品的阐释、价值判断与公共呈现方式，并讨论博物馆、学术研究、展览活动与数字策展如何成为传统中国艺术连接更广泛全球受众的桥梁。",
+    descriptionZh: `西方与中国艺术的相遇，不仅塑造了这些作品在西方世界中被如何理解与赋值，也影响了它们如何被呈现给更广泛的公众并被观众所体验。从16、17世纪早期交流，到当代博物馆实践，本场论坛将考察那些不断演变的学术、制度、文化与地缘政治框架，如何共同构成西方对中国传统艺术的认知方式。
+
+讨论将回顾历史上的关键转折点与当下的现实挑战，尤其关注博物馆、学者以及面向公众的项目如何让中国艺术对不同观众而言更易进入、更具意义。议题将包括伦理标准变化带来的影响，Asia Week New York 等展览与活动所扮演的角色，以及数字策展和线上平台在扩大可及性、阐释空间与全球参与度方面日益增长的重要性。论坛也将探讨各类机构如何通过更具创意的叙事方式、教育实践与跨机构合作来连接公众。
+
+面向未来，对话还将进一步思考中国传统艺术在今天更广泛的意义：它如何促进文化理解、触达新的公众，并在一个快速变化、数字高度连通的世界中持续保持相关性。讨论也将关注中国艺术研究如何变得更加包容、更加面向公共，并思考艺术、博物馆与学术合作在未来能否成为连接东西方、促进对话与相互理解的桥梁。`,
     speakers: [
       speaker("Eugene Wang", "Moderator; Abby Aldrich Rockefeller Professor of Asian Art, Harvard University", "汪悦进", "主持人；哈佛大学艺术史系洛克菲勒亚洲艺术史专席教授"),
       speaker("Maxwell K. Hearn", "Douglas Dillon Chairman of the Department of Asian Art, The Metropolitan Museum of Art", "何慕文", "纽约大都会艺术博物馆亚洲部主任"),
@@ -322,10 +323,8 @@ Bringing together a distinguished group of experts, the panel will offer multifa
     title: "Film",
     titleZh: "影视",
     venueId: "science-b",
-    description:
-      "This Chinese-language film panel looks at cinema as both an artistic medium and a public language for understanding contemporary China. Bringing together scholars and filmmakers, it explores visual storytelling, cultural memory, and how film travels across audiences and borders.",
-    descriptionZh:
-      "这场中文影视论坛将电影视为艺术创作与公共表达的双重媒介，讨论当代中国影像如何被创作、观看与理解。嘉宾将围绕视觉叙事、文化记忆以及电影如何跨越受众与地域传播展开交流。",
+    description: "",
+    descriptionZh: "",
     speakers: [
       speaker("Icey Lin", "Moderator; Ph.D. Student in Department of History of Art and Architecture, Harvard University", "林冰洁", "主持人；哈佛大学艺术与建筑历史系博士生"),
       speaker("Jinying Li", "Assistant Professor of Modern Culture and Media, Brown University; Co-Writer, Big Fish and Begonia", "Jinying Li", "布朗大学现代文化与媒体系助理教授，《大鱼海棠》联合创作者"),
@@ -402,10 +401,8 @@ As governments and corporations navigate a rapidly shifting geopolitical environ
     title: "Global Outlook for Next-Generation Business Leaders",
     titleZh: "新时代商业精英的全球视野",
     venueId: "science-d",
-    description:
-      "This Chinese-language panel focuses on what a global perspective now means for the next generation of business leaders. Founders, investors, and operators will discuss entrepreneurship, management, cross-border expansion, and the capabilities young leaders need to build durable companies in a more fragmented world.",
-    descriptionZh:
-      "这场中文论坛聚焦新一代商业领导者应如何建立真正的全球视野。嘉宾将围绕创业、管理、跨境扩张以及在更碎片化的世界中打造长期型企业所需的能力展开讨论。",
+    description: "",
+    descriptionZh: "",
     speakers: [
       speaker("Ally Liu", "Moderator; Founder and CEO, Influcio Ai", "刘滢", "主持人；Influcio.ai 创始人、首席执行官"),
       speaker("Anna Danyi Chen", "Tentative; Founder and CEO, Novum Studio (Frog Social)", "陈丹怡", "待定；Novum Studio（Frog Social）创始人、首席执行官"),
