@@ -24,7 +24,7 @@ export function SchedulePage() {
   const copy =
     locale === "zh"
       ? {
-          forum: "哈佛大学中国论坛",
+          forum: "哈佛中国论坛",
           schedule: "2026 日程",
           openInMaps: "在地图中打开",
           venuePending: "地点待定",
