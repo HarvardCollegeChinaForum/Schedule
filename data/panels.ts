@@ -90,10 +90,10 @@ Titled "Chinese Wisdom and Strategic Innovation," this panel brings together str
 本场论坛以「东方智慧与战略创新」为主题，汇聚战略专家、行业领袖与顶尖学者，以东方智慧为核心，深入探讨企业在动荡时代如何通过战略创新，构建长期可持续的差异化竞争优势，把握未来商业增长的确定性与主动权。`,
     speakers: [
       speaker(
-        "Catherine So",
-        "Moderator; Visiting Fellow, MIT; Former CEO, South China Morning Post",
-        "苏嘉媛",
-        "主持人；麻省理工学院访问学者，《南华日报》前首席执行官",
+        "Yuan Zou",
+        "Moderator; Assistant Professor in Accounting and Management, Harvard Business School",
+        "邹媛",
+        "主持人；哈佛商学院会计与管理系助理教授",
       ),
       speaker("Bolong Li", "Vice President and Head of Growth Marketing, Amazon Audible", "李博隆", "亚马逊 Audible 副总裁、全球增长负责人"),
       speaker("Geping Mao", "Founder and Chairman, MAOGEPING Cosmetics Co.", "毛戈平", "毛戈平美妆品牌创始人、董事长"),
@@ -110,6 +110,12 @@ Titled "Chinese Wisdom and Strategic Innovation," this panel brings together str
 
 与会嘉宾将分享在跨营商环境中驾驭差异的实战洞察，探讨如何培育国际合作伙伴关系，并充分发挥香港作为资本、人才与创新枢纽的核心优势。超越商业范畴，对话还将延伸至香港“融汇东西”的文化混合性，探讨这一独特身份如何有效增进信任、促进多方协作。参会者将深入理解香港作为充满活力的动态中介者如何持续演进，助力企业与投资者在牢牢对接全球市场的同时，精准把握中国机遇。`,
     speakers: [
+      speaker(
+        "Catherine So",
+        "Moderator; Visiting Fellow, MIT; Former CEO, South China Morning Post",
+        "苏嘉媛",
+        "主持人；麻省理工学院访问学者，《南华日报》前首席执行官",
+      ),
       speaker(
         "Bernard Chan",
         "Chairman, West Kowloon Cultural District; Chairman, Asia Financial; Chairman, Our Hong Kong Foundation",
@@ -182,7 +188,6 @@ Looking ahead, the conversation turns to the broader significance of traditional
 面向未来，对话还将进一步思考中国传统艺术在今天更广泛的意义：它如何促进文化理解、触达新的公众，并在一个快速变化、数字高度连通的世界中持续保持相关性。讨论也将关注中国艺术研究如何变得更加包容、更加面向公共，并思考艺术、博物馆与学术合作在未来能否成为连接东西方、促进对话与相互理解的桥梁。`,
     speakers: [
       speaker("Xiaoge He", "Moderator; Post-Doctoral Researcher, Department of Anthropology, Harvard University", "何晓歌", "主持人；哈佛大学人类学博士后研究员"),
-      speaker("Eugene Wang", "Abby Aldrich Rockefeller Professor of Asian Art, Harvard University", "汪悦进", "哈佛大学艺术史系洛克菲勒亚洲艺术史专席教授"),
       speaker("Maxwell K. Hearn", "Douglas Dillon Chairman of the Department of Asian Art, The Metropolitan Museum of Art", "何慕文", "纽约大都会艺术博物馆亚洲部主任"),
       speaker(
         "Angela McAteer",
@@ -191,6 +196,7 @@ Looking ahead, the conversation turns to the broader significance of traditional
         "苏富比高级副总裁、中国陶瓷及艺术品（欧美地区）部主管",
       ),
       speaker("Alice Teng", "Executive Director, Asia Week New York", "Alice Teng", "亚洲艺术周执行董事"),
+      speaker("Eugene Wang", "Abby Aldrich Rockefeller Professor of Asian Art, Harvard University", "汪悦进", "哈佛大学艺术史系洛克菲勒亚洲艺术史专席教授"),
     ],
   },
   sustainability: {
@@ -205,7 +211,7 @@ This Sustainability Panel convenes leaders in new energy, carbon research, and i
 本次可持续发展论坛将汇聚新能源、碳研究以及国际气候合作领域的领袖，共同探讨推动下一阶段可持续发展的关键力量。与会嘉宾将围绕能源转型面临的机遇与挑战、创新与市场在推动气候解决方案中的作用，以及如何通过合作伙伴关系实现持久影响等议题展开讨论。`,
     speakers: [
       speaker("Grace Sun", "Moderator; Head of Strategic Marketing and Communications, LONGi North America", "Grace Sun", "主持人；隆基绿能北美区市场战略营销与传播总监"),
-      speaker("Eric Luo", "Group Vice President and President of North America, LONGi Solar", "罗鑫", "隆基绿能集团副总裁、北美区总裁"),
+      speaker("Luke Tillman", "General Counsel, LONGi Solar", "Luke Tillman", "隆基绿能法务总监"),
       speaker("Meng Meng", "General Manager, Macao International Carbon Emission Exchange", "孟萌", "澳门国际碳排放权交易所总经理"),
       speaker("Paula VanLaningham", "Director of Carbon Research, London Stock Exchange Group", "Paula VanLaningham", "伦敦证券交易所碳研究主管"),
       speaker("Qi Wang", "President and CEO, US-China Green Energy Council", "王麒", "美中绿色能源促进会主席、执行会长"),
@@ -294,6 +300,12 @@ Panelists will explore how systems of classification and exclusion, the restruct
 与会学者将进一步分析分类与排除机制的历史演进、城市化进程中乡村制度的重构，以及长期存在的区域不平等如何在不同阶段被不断塑造，并持续界定着当代公民身份与社会融入的边界。通过整合历史、政治与空间多重视角，本场讨论力图提供一种更为扎实的理解框架，以把握中国当下城市格局的历史生成过程，以及其对未来发展路径的深远启示。`,
     speakers: [
       speaker(
+        "Frank Zhou",
+        "Moderator; Associate Producer, Face-Off: U.S. vs China; Co-President Emeritus, Harvard College China Forum",
+        "周欣哲",
+        "主持人；Face-Off: U.S. vs China 博客助理制片人，哈佛中国论坛前联席主席",
+      ),
+      speaker(
         "Cindy Fan",
         "Vice Provost for International Studies and Global Engagement and Professor of Geography, University of California, Los Angeles",
         "范芝芬",
@@ -316,14 +328,15 @@ Bringing together a distinguished group of experts, the panel will offer multifa
     speakers: [
       speaker("Ted Osius", "Virtual Address; Former U.S. Ambassador to Vietnam, President, US-ASEAN Business Council", "Ted Osius", "线上致辞；美国前驻越南大使，美国-东盟商业理事会主席"),
       speaker("Richard Yarrow", "Moderator; Research Fellow at the Mossavar-Rahmani Center for Business and Government, Harvard Kennedy School", "叶理查", "主持人；哈佛肯尼迪学院莫萨瓦-拉赫马尼商业与政治中心研究员"),
+      speaker("Adam Nguyen", "Executive Director, Sora Ventures", "阮亚当", "Sora Ventures 执行董事"),
       speaker("Muhamad Chatib Basri", "Former Finance Minister of Indonesia", "Muhamad Chatib Basri", "印度尼西亚前财政部部长"),
       speaker("David Dapice", "Professor Emeritus of Economics, Tufts University", "David Dapice", "塔夫茨大学荣休经济学教授"),
       speaker("Gregory B. Poling", "Director and Senior Fellow of the Southeast Asia Program and Asia Maritime Transparency Initiative, Center for Strategic and International Studies", "Gregory B. Poling", "战略与国际研究中心东南亚项目与亚洲海事透明倡议主任兼高级研究员"),
     ],
   },
   film: {
-    title: "Film",
-    titleZh: "影视",
+    title: "Future Storytelling in Chinese Cinema",
+    titleZh: "中国电影的叙事未来",
     venueId: "science-c",
     description: `How Does Chinese Cinema Tell Stories?
 To answer this question, one must reflect. From its inception, Chinese cinema has been intertwined with theater: the source material, performance styles, and modes of spectatorship in early films were all profoundly shaped by the traditions of Chinese opera. Even amid calls in the early 1980s for a "divorce between film and drama," Chinese cinema and Chinese theater could never be fully separated.
@@ -403,8 +416,8 @@ As governments and corporations navigate a rapidly shifting geopolitical environ
     ],
   },
   fintech: {
-    title: "Fintech",
-    titleZh: "金融科技",
+    title: "AI Meets Capital: Technology Reshaping Finance Across Borders",
+    titleZh: "AI遇上资本：重塑跨境金融",
     venueId: "science-c",
     description: `Artificial intelligence is fundamentally transforming how capital is allocated, how industries operate, and how financial services reach consumers. From automating investment research and underwriting to enabling new models in insurance and healthcare, AI is no longer a future promise but rather it is actively reshaping the competitive landscape across sectors. Emerging technologies such as blockchain and tokenization are introducing new architectures for how value is created, transferred, and governed. As the U.S. and China develop increasingly distinct paths in regulating and adopting these technologies, the divergence is creating both friction and opportunity for entrepreneurs, investors, and institutions operating across borders. Bringing together founders, investors, and leading researchers, this panel examines what it takes to build, fund, and scale transformative companies at the intersection of AI, finance, and technology and how the evolving U.S.-China landscape is shaping the future of financial innovation.`,
     descriptionZh: `人工智能正在深刻改变资本配置的方式、行业的运行模式，以及金融服务触达用户的路径。从投资研究和信贷审批的自动化，到保险、医疗等领域的新模式，AI已经不再是未来的愿景，而是实实在在地重塑着各行各业的竞争格局。与此同时，区块链、代币化等新兴技术也在为价值的创造、转移和治理提供全新的架构。随着美国和中国在技术监管与落地路径上的差异越来越大，这种分化给跨境发展的创业者、投资人和机构既带来了挑战，也创造了机会。本场分论坛汇聚了创业者、投资人和顶尖学者，将一起探讨：在人工智能、金融与科技的交汇点上，如何打造、投资并做大那些具有变革潜力的公司？以及不断变化的中美格局，将如何影响金融创新的未来？`,
