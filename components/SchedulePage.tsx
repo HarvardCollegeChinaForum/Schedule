@@ -13,6 +13,10 @@ function getFallbackVenue(dayId: string) {
   return getVenue(dayId === "saturday" ? "mem-church" : "science-center");
 }
 
+function getMapTarget(venue: (typeof venues)[number]) {
+  return venue.routeTarget ?? venue.embedQuery ?? venue.address;
+}
+
 export function SchedulePage() {
   const [locale, setLocale] = useState<Locale>("en");
   const [expandedTracks, setExpandedTracks] = useState<Record<string, boolean>>({});
@@ -127,7 +131,7 @@ export function SchedulePage() {
                         {!session.tracks && venue ? (
                           <a
                             className="mapAction"
-                            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(venue.routeTarget ?? venue.address)}`}
+                            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(getMapTarget(venue))}`}
                             target="_blank"
                             rel="noreferrer"
                           >
@@ -162,7 +166,7 @@ export function SchedulePage() {
                                   </div>
                                   <a
                                     className="mapAction"
-                                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(trackVenue?.routeTarget ?? trackVenue?.address ?? "")}`}
+                                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(trackVenue ? getMapTarget(trackVenue) : "")}`}
                                     target="_blank"
                                     rel="noreferrer"
                                   >

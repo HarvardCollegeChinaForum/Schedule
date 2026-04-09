@@ -82,8 +82,12 @@ This panel brings together leading journalists and media leaders to examine how 
     title: "Chinese Wisdom and Innovation",
     titleZh: "东方智慧与战略创新",
     venueId: "nw-b103",
-    description: "",
-    descriptionZh: "",
+    description: `Global business is currently caught in a state of contrasting strategy, driven by an accelerated evolution of technology and frequent shifts in geopolitical relationships. As established theoretical frameworks begin to lose their efficacy, perhaps the most certain path forward is a path back to the fundamentals—revisiting questions about change, competition, and strategy to unlock new possibilities for the future.
+
+Titled "Chinese Wisdom and Strategic Innovation," this panel brings together strategic experts, industry leaders, and top scholars in their field. With Eastern wisdom at its core, the panel will delve into how enterprises can leverage strategic innovation during turbulent times to build sustainable, long-term competitive advantages and secure both certainty and agency in future business growth.`,
+    descriptionZh: `全球商业正在技术的加速迭代与地缘的频繁波动中陷入战略焦虑。当既有的理论框架日渐失灵，也许最确定的路径，就是回到文明的源头，重新思考那些关于变化、竞争与战略的根本问题，为未来打开新的可能。
+
+本场论坛以「东方智慧与战略创新」为主题，汇聚战略专家、行业领袖与顶尖学者，以东方智慧为核心，深入探讨企业在动荡时代如何通过战略创新，构建长期可持续的差异化竞争优势，把握未来商业增长的确定性与主动权。`,
     speakers: [
       speaker(
         "Yuan Zou",
@@ -322,9 +326,24 @@ Bringing together a distinguished group of experts, the panel will offer multifa
   film: {
     title: "Film",
     titleZh: "影视",
-    venueId: "science-b",
-    description: "",
-    descriptionZh: "",
+    venueId: "science-c",
+    description: `How Does Chinese Cinema Tell Stories?
+To answer this question, one must reflect. From its inception, Chinese cinema has been intertwined with theater: the source material, performance styles, and modes of spectatorship in early films were all profoundly shaped by the traditions of Chinese opera. Even amid calls in the early 1980s for a "divorce between film and drama," Chinese cinema and Chinese theater could never be fully separated.
+
+Over more than a century, from traditional opera to film, to television dramas, and now to short series and short videos: China's visual storytelling practices seem to perpetually replace one form of theatricality with another. It can be said that in the face of ever-emerging new media, the cultural bloodstream of Chinese cinema's pursuit of "theatricality" has never vanished—rather, it has continuously evolved and revived.
+
+Today, the rise of AI-generated content heralds yet another transformation: Will the "theatricality" of Chinese cinema continue to migrate, and how will it be changed? Beyond the surface of technological iteration, does Chinese cinema possess its own distinct narrative instincts? Looking ahead, how will Chinese cinema tell stories in the future?
+
+From retrospection to prospection, this panel will explore the cultural lineage and future expressions of Chinese cinema through both historical and contemporary perspectives.`,
+    descriptionZh: `中国电影，如何叙事？
+
+要回答这一问题，首先需要回望。中国电影自诞生之初就与戏剧结缘：早期影像的内容取材、表演风格、观演形式，无一不深受戏曲传统的塑形；甚至在八十年代初“电影与戏剧离婚”的呼声下，中国电影与中国戏剧也未能彻底分家。
+
+百余年来，从戏曲到电影、到电视剧、再到短剧与短视频：中国影像实践似乎总以一种戏剧取代另一种戏剧。可以说，面对不断涌现的新媒介，中国电影追求“戏剧性”的文化血脉从未消失，而是在持续演化和日益再生。
+
+今天，AI生成内容的发展又带来新的变局：中国电影的“戏剧性”是否继续迁移、又将如何重组？超越技术迭新的表象，中国电影是否拥有自身独特的叙事本能？展望未来，中国电影还将如何叙事？
+
+从回望到展望，本场分论坛将从历史与当下的视角讨论中国电影的文化血脉与未来表达。`,
     speakers: [
       speaker("Icey Lin", "Moderator; Ph.D. Student in Department of History of Art and Architecture, Harvard University", "林冰洁", "主持人；哈佛大学艺术与建筑历史系博士生"),
       speaker("Jinying Li", "Assistant Professor of Modern Culture and Media, Brown University; Co-Writer, Big Fish and Begonia", "Jinying Li", "布朗大学现代文化与媒体系助理教授，《大鱼海棠》联合创作者"),
@@ -335,7 +354,7 @@ Bringing together a distinguished group of experts, the panel will offer multifa
   agenticAi: {
     title: "The Future of Agentic AI",
     titleZh: "智能体 AI 的未来",
-    venueId: "science-c",
+    venueId: "science-b",
     description: `AI proliferation is in a massive transition as we move from generative models that we can “speak” with to agentic systems that can “act”. Agentic AI can reason, plan, and executive complex workflows across digital and physical environments and represents a major shift in the way we think about AI-assisted work. The central question remains how these autonomous systems will redefine human productivity and industrial capabilities in the world’s leading tech ecosystems.
 
 This panel brings together a group of pioneers that are founding and investing in the more innovative agentic AI breakthroughs. We hope to learn how we can transform fields like enterprise automations and how agents can navigate “messy” real world data. This session will ultimately examine where the next breakthroughs will emerge and how agentic AI can reshape the race for the most capable autonomous systems.`,
@@ -401,8 +420,10 @@ As governments and corporations navigate a rapidly shifting geopolitical environ
     title: "Global Outlook for Next-Generation Business Leaders",
     titleZh: "新时代商业精英的全球视野",
     venueId: "science-d",
-    description: "",
-    descriptionZh: "",
+    description: `Amidst profound shifts in the global landscape and as China's economy advances toward high-quality development, a new generation of innovators is redefining the boundaries between business and society through their unique global vision and deep local insights. They are no longer followers of the status quo, but creators of new paradigms, ranging from AI-driven marketing transformation, to the localization of international standards, to the integration of cutting-edge technology and humanistic care.
+
+This panel brings together top leaders from fields such as technology, investment, human resources, marketing, and healthcare, who are not only beneficiaries and drivers of globalization but also pioneers deeply committed to Chinese practice. Together, they will explore how innovators, in these times of both opportunity and challenge, can leverage global resources and perspectives, integrate local wisdom and action, and shape world-class innovative practices to inject new vitality into the business ecosystems of China and beyond.`,
+    descriptionZh: `在全球化格局深度调整、中国经济迈向高质量发展的新阶段，新一代的变革者正以其独特的全球视野和深刻的在地洞察，重新定义商业与社会的边界。他们不再仅是规则的遵循者，更是新范式的创造者——从AI驱动的营销革新，到国际标准的本土化落地，再到前沿科技与人文关怀的深度融合。本场分论坛汇聚了来自科技、投资、人力资源、市场营销及医疗健康等领域的杰出领袖，他们既是全球化的受益者与推动者，更是深耕中国本土实践的探索者。嘉宾们将共同探讨，在充满机遇与挑战的当下，变革者如何利用全球资源与视角，结合本土智慧与行动，塑造具有世界级竞争力的创新实践，并为中国乃至全球的商业生态注入新的活力。`,
     speakers: [
       speaker("Ally Liu", "Moderator; Founder and CEO, Influcio Ai", "刘滢", "主持人；Influcio.ai 创始人、首席执行官"),
       speaker("Anna Danyi Chen", "Tentative; Founder and CEO, Novum Studio (Frog Social)", "陈丹怡", "待定；Novum Studio（Frog Social）创始人、首席执行官"),

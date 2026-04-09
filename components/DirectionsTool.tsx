@@ -46,6 +46,10 @@ export function DirectionsTool({ locale }: DirectionsToolProps) {
   const fromVenue = venues.find((venue) => venue.id === fromRoute?.venueId);
   const toVenue = venues.find((venue) => venue.id === toRoute?.venueId);
 
+  function getMapTarget(venue: (typeof venues)[number]) {
+    return venue.routeTarget ?? venue.embedQuery ?? venue.address;
+  }
+
   const copy =
     locale === "zh"
       ? {
@@ -65,7 +69,7 @@ export function DirectionsTool({ locale }: DirectionsToolProps) {
 
   const directionsUrl =
     fromVenue && toVenue
-      ? `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(fromVenue.routeTarget ?? fromVenue.address)}&destination=${encodeURIComponent(toVenue.routeTarget ?? toVenue.address)}&travelmode=walking`
+      ? `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(getMapTarget(fromVenue))}&destination=${encodeURIComponent(getMapTarget(toVenue))}&travelmode=walking`
       : "#";
 
   return (
