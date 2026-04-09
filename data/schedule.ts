@@ -1,4 +1,4 @@
-import { panelTracks, type PanelTrack } from "@/data/panels";
+import { panelTracks, type PanelSpeaker, type PanelTrack } from "@/data/panels";
 
 export type Venue = {
   id: string;
@@ -24,7 +24,14 @@ export type Session = {
   venueId?: string;
   description?: string;
   descriptionZh?: string;
+  speakerGroups?: SessionSpeakerGroup[];
   tracks?: PanelTrack[];
+};
+
+export type SessionSpeakerGroup = {
+  label: string;
+  labelZh: string;
+  speakers: PanelSpeaker[];
 };
 
 export type DaySchedule = {
@@ -40,6 +47,18 @@ export type DaySchedule = {
 };
 
 export type Locale = "en" | "zh";
+
+const speaker = (
+  name: string,
+  title: string,
+  nameZh = name,
+  titleZh = title,
+): PanelSpeaker => ({
+  name,
+  title,
+  nameZh,
+  titleZh,
+});
 
 export const venues: Venue[] = [
   {
@@ -192,6 +211,33 @@ export const schedule: DaySchedule[] = [
         titleZh: "开幕式",
         type: "ceremony",
         venueId: "mem-church",
+        speakerGroups: [
+          {
+            label: "Speakers",
+            labelZh: "嘉宾",
+            speakers: [
+              speaker(
+                "Nicholas Burns",
+                "Former U.S. Ambassador to China; Roy and Barbara Goodman Family Professor of the Practice of Diplomacy and International Relations, Harvard Kennedy School",
+                "Nicholas Burns",
+                "美国前驻中国大使，哈佛肯尼迪学院 Roy and Barbara Goodman 家族外交与国际关系实践教授",
+              ),
+              speaker(
+                "Li Chen",
+                "Consul General of the People's Republic of China in New York",
+                "陈立",
+                "中华人民共和国驻纽约总领事",
+              ),
+              speaker("Kenny Lam", "CEO, Two Sigma Asia Pacific", "林国沣", "Two Sigma亚太区首席执行官"),
+              speaker(
+                "Sir Oliver Hart",
+                "2016 Nobel Laureate in Economics; Lewis P. and Linda L. Geyser University Professor, Harvard University",
+                "Sir Oliver Hart",
+                "2016年诺贝尔经济学奖得主，哈佛大学 Lewis P. and Linda L. Geyser 校级教授",
+              ),
+            ],
+          },
+        ],
       },
       {
         id: "sat-panels-1",
@@ -252,6 +298,35 @@ export const schedule: DaySchedule[] = [
         titleZh: "创业路演",
         type: "competition",
         venueId: "science-a",
+        speakerGroups: [
+          {
+            label: "Speaker",
+            labelZh: "演讲嘉宾",
+            speakers: [speaker("Jian Ma", "Co-Founder and CEO, XtalPi", "马健", "晶泰科技联合创始人，首席执行官")],
+          },
+          {
+            label: "Judges",
+            labelZh: "评委",
+            speakers: [
+              speaker(
+                "Jingjing Chai",
+                "General Partner, Taihill Venture; Co-founder and CEO, Foundry BioSciences",
+                "柴菁菁",
+                "Taihill Venture 管理合伙人，Foundry BioSciences 联合创始人、首席执行官",
+              ),
+              speaker("Yusen Dai", "Managing Partner, Zhenfund", "戴雨森", "真格基金管理合伙人"),
+              speaker("Fritz Demopoulos", "Partner, Queen's Road Capital", "戴福瑞", "皇后大道投资公司合伙人"),
+              speaker("Henry Zhang", "President and Managing Director, Hermitage Capital", "张梦涵", "和暄资本总裁、管理合伙人"),
+              speaker("Michael Zhao", "Co-Founder, Q Bay Boston", "Michael Zhao", "Q Bay Boston 联合创始人"),
+              speaker(
+                "Wei Zhou",
+                "Founder, Cyber Creation Ventures (CCV); Former Managing Partner, KPCB China",
+                "周炜",
+                "创世伙伴创投创始主管合伙人",
+              ),
+            ],
+          },
+        ],
       },
       {
         id: "sun-panels-5",
@@ -267,7 +342,7 @@ export const schedule: DaySchedule[] = [
         title: "Panels 6",
         titleZh: "分论坛 6",
         type: "panel-block",
-        tracks: [panelTracks.film, panelTracks.agenticAi, panelTracks.globalHealth],
+        tracks: [panelTracks.agenticAi, panelTracks.film, panelTracks.globalHealth],
       },
       {
         id: "sun-panels-7",
@@ -292,6 +367,33 @@ export const schedule: DaySchedule[] = [
         titleZh: "闭幕式",
         type: "ceremony",
         venueId: "mem-church",
+        speakerGroups: [
+          {
+            label: "Closing Remarks",
+            labelZh: "闭幕式致辞",
+            speakers: [
+              speaker(
+                "Mark Elliott",
+                "Vice Provost of International Affairs and Mark Schwartz Professor of Chinese and Inner Asian History, Harvard University",
+                "欧立德",
+                "哈佛大学国际事务副教务长、东亚语言文明与内亚史系教授",
+              ),
+              speaker(
+                "Shenglin Ben",
+                "Founding Dean, International Business School and Academy of Internet Finance, Zhejiang University; Former China CEO, JP Morgan Chase Bank",
+                "贲圣林",
+                "浙江大学国际联合商学院与金融科技研究院创始院长; 摩根大通银行原中国行长",
+              ),
+              speaker("Jian Ma", "Co-Founder and CEO, XtalPi", "马健", "晶泰科技联合创始人，首席执行官"),
+              speaker(
+                "Erik Solheim",
+                "Former Norwegian Minister of Environment, Minister of International Development; Former Executive Director, UN Environment Programme",
+                "Erik Solheim",
+                "挪威前环境部部长、国际发展部部长，联合国前副秘书长兼环境规划署执行主任",
+              ),
+            ],
+          },
+        ],
       },
     ],
   },

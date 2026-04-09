@@ -38,14 +38,14 @@ export const panelTracks = {
     speakers: [
       speaker("Alex Peng", "Moderator; President and CFO, TAL Education Group", "彭壮壮", "主持人；好未来教育集团总裁、首席财务官"),
       speaker("Philip Cheng", "Director, Galaxy Entertainment Group", "程裕昇", "银河娱乐集团董事"),
-      speaker(
-        "William Kirby",
-        "T. M. Chang Professor of China Studies and Spangler Family Professor of Business Administration, Harvard University",
-        "柯伟林",
-        "哈佛大学 T.M. Chang 中国研究讲席教授、哈佛商学院斯宾格勒家族工商管理学讲席教授",
-      ),
       speaker("Manuel Menendez", "Founder and CEO, MCM Group Holdings", "孟德士", "MCM控股集团创始人、首席执行官"),
       speaker("Mitchell Presnick", "Founder, Super 8 Hotels China", "柏力", "速8酒店中国创始人"),
+      speaker(
+        "Catherine So",
+        "Visiting Fellow, MIT; Former CEO, South China Morning Post",
+        "苏嘉媛",
+        "麻省理工学院访问学者，《南华日报》前首席执行官",
+      ),
     ],
   },
   journalism: {
@@ -90,10 +90,10 @@ Titled "Chinese Wisdom and Strategic Innovation," this panel brings together str
 本场论坛以「东方智慧与战略创新」为主题，汇聚战略专家、行业领袖与顶尖学者，以东方智慧为核心，深入探讨企业在动荡时代如何通过战略创新，构建长期可持续的差异化竞争优势，把握未来商业增长的确定性与主动权。`,
     speakers: [
       speaker(
-        "Yuan Zou",
-        "Moderator; Assistant Professor in Accounting and Management, Harvard Business School",
-        "邹媛",
-        "主持人；哈佛商学院会计与管理系助理教授",
+        "Catherine So",
+        "Moderator; Visiting Fellow, MIT; Former CEO, South China Morning Post",
+        "苏嘉媛",
+        "主持人；麻省理工学院访问学者，《南华日报》前首席执行官",
       ),
       speaker("Bolong Li", "Vice President and Head of Growth Marketing, Amazon Audible", "李博隆", "亚马逊 Audible 副总裁、全球增长负责人"),
       speaker("Geping Mao", "Founder and Chairman, MAOGEPING Cosmetics Co.", "毛戈平", "毛戈平美妆品牌创始人、董事长"),
@@ -131,12 +131,7 @@ This panel brings together preeminent scholars and leaders from the private sect
 本场论坛汇聚来自学界与私营部门的多位重量级专家，围绕中国在拉丁美洲不断扩展的影响力展开深入探讨——从贸易与投资到基础设施与金融合作，这些因素正重塑整个西半球的互动关系。讨论将聚焦于美国、中国与拉丁美洲如何在深化经济联系的同时，应对日益上升的地缘竞争，以及这一系列变化将如何影响未来的贸易格局与区域影响力走向。`,
     speakers: [
       speaker("Bill Ding", "Moderator; Country Manager for Mexico, Alibaba Group", "丁逸伦", "主持人；阿里巴巴墨西哥国家经理"),
-      speaker(
-        "Robert Evan Ellis",
-        "Latin America Research Professor and General Douglas Macarthur Research Chair, U.S. Army War College Strategic Studies Institute",
-        "Robert Evan Ellis",
-        "美国陆军战争学院战略研究所拉丁美洲研究教授、麦克阿瑟讲席教授",
-      ),
+      speaker("Hansong Li", "Assistant Professor, American University School of International Service", "Hansong Li", "美利坚大学国际服务学院助理教授"),
       speaker(
         "Margaret Myers",
         "Managing Director of the Institute for America, China, and the Future of Global Affairs, Johns Hopkins University; Senior Advisor of the Asia & Latin America Program, Inter-American Dialogue",
@@ -186,7 +181,8 @@ Looking ahead, the conversation turns to the broader significance of traditional
 
 面向未来，对话还将进一步思考中国传统艺术在今天更广泛的意义：它如何促进文化理解、触达新的公众，并在一个快速变化、数字高度连通的世界中持续保持相关性。讨论也将关注中国艺术研究如何变得更加包容、更加面向公共，并思考艺术、博物馆与学术合作在未来能否成为连接东西方、促进对话与相互理解的桥梁。`,
     speakers: [
-      speaker("Eugene Wang", "Moderator; Abby Aldrich Rockefeller Professor of Asian Art, Harvard University", "汪悦进", "主持人；哈佛大学艺术史系洛克菲勒亚洲艺术史专席教授"),
+      speaker("Xiaoge He", "Moderator; Post-Doctoral Researcher, Department of Anthropology, Harvard University", "何晓歌", "主持人；哈佛大学人类学博士后研究员"),
+      speaker("Eugene Wang", "Abby Aldrich Rockefeller Professor of Asian Art, Harvard University", "汪悦进", "哈佛大学艺术史系洛克菲勒亚洲艺术史专席教授"),
       speaker("Maxwell K. Hearn", "Douglas Dillon Chairman of the Department of Asian Art, The Metropolitan Museum of Art", "何慕文", "纽约大都会艺术博物馆亚洲部主任"),
       speaker(
         "Angela McAteer",
@@ -227,6 +223,8 @@ This Sustainability Panel convenes leaders in new energy, carbon research, and i
       speaker("Wei Tao", "Moderator; Director, Blavatnik Harvard Life Lab", "陶崴", "主持人；哈佛Blavatnik生命科学实验室负责人"),
       speaker("Nicholas Galakatos", "Global Head of Life Sciences, Blackstone Group", "Nicholas Galakatos", "黑石集团生命科学全球主管"),
       speaker("Suguna Rachakonda", "Vice President of Business Development, Insilico Medicine", "Suguna Rachakonda", "英矽智能高级业务发展负责人"),
+      speaker("Chongzhao Ran", "Associate Professor of Radiology, Harvard Medical School", "冉崇昭", "哈佛医学院放射学副教授"),
+      speaker("Guang Yang", "Partner, McKinsey & Company", "杨光", "麦肯锡咨询合伙人"),
     ],
   },
   africa: {
@@ -302,7 +300,6 @@ Panelists will explore how systems of classification and exclusion, the restruct
         "加州大学洛杉矶分校国际研究及全球事务副教务长、地理学教授",
       ),
       speaker("Nick Smith", "Assistant Professor of Architecture and Urban Studies at Barnard College, Columbia University", "Nick Smith", "哥伦比亚大学巴纳德学院建筑与城市研究助理教授"),
-      speaker("Dorothy Solinger", "Professor Emerita of Political Science, University of California, Irvine", "苏黛瑞", "加州大学尔湾分校政治学系荣誉退休教授"),
       speaker("Michael Szonyi", "Frank Wen-Hsiung Wu Memorial Professor of Chinese History, Harvard University", "宋怡明", "哈佛大学吴文雄中国历史讲席教授"),
     ],
   },
@@ -317,10 +314,11 @@ Bringing together a distinguished group of experts, the panel will offer multifa
 
 本场论坛汇聚了一批杰出的专家，将从多重视角对这些关键议题展开深入分析。讨论将围绕若干核心问题展开，例如：东南亚应如何在两个竞争中的超级大国之间保持平衡？这种格局对地区稳定与经济增长的长期影响是什么？以及在一个日益动荡的世界中，东南亚又将如何维持自身的重要性与影响力？`,
     speakers: [
-      speaker("Ted Osius", "Virtual Address; Former U.S. Ambassador to Vietnam; President, US-ASEAN Business Council", "Ted Osius", "线上致辞；美国前驻越南大使，美国-东盟商业理事会主席"),
+      speaker("Ted Osius", "Virtual Address; Former U.S. Ambassador to Vietnam, President, US-ASEAN Business Council", "Ted Osius", "线上致辞；美国前驻越南大使，美国-东盟商业理事会主席"),
       speaker("Richard Yarrow", "Moderator; Research Fellow at the Mossavar-Rahmani Center for Business and Government, Harvard Kennedy School", "叶理查", "主持人；哈佛肯尼迪学院莫萨瓦-拉赫马尼商业与政治中心研究员"),
       speaker("Muhamad Chatib Basri", "Former Finance Minister of Indonesia", "Muhamad Chatib Basri", "印度尼西亚前财政部部长"),
-      speaker("Gregory B. Poling", "Director and Senior Fellow of the Southeast Asia Program and Asia Maritime Transparency Initiative, Center for Strategic and International Studies", "Gregory B. Poling", "战略与国际研究中心亚洲海事透明倡议主管"),
+      speaker("David Dapice", "Professor Emeritus of Economics, Tufts University", "David Dapice", "塔夫茨大学荣休经济学教授"),
+      speaker("Gregory B. Poling", "Director and Senior Fellow of the Southeast Asia Program and Asia Maritime Transparency Initiative, Center for Strategic and International Studies", "Gregory B. Poling", "战略与国际研究中心东南亚项目与亚洲海事透明倡议主任兼高级研究员"),
     ],
   },
   film: {
@@ -347,6 +345,7 @@ From retrospection to prospection, this panel will explore the cultural lineage 
     speakers: [
       speaker("Icey Lin", "Moderator; Ph.D. Student in Department of History of Art and Architecture, Harvard University", "林冰洁", "主持人；哈佛大学艺术与建筑历史系博士生"),
       speaker("Jinying Li", "Assistant Professor of Modern Culture and Media, Brown University; Co-Writer, Big Fish and Begonia", "Jinying Li", "布朗大学现代文化与媒体系助理教授，《大鱼海棠》联合创作者"),
+      speaker("Max Ren", "President, Eastern TV (US); Director, SMG North America", "任美星", "上海文化广播影视集团（SMG）东方卫视美国运营总监、美国东方广播影视公司总裁"),
       speaker("Wen Song", "Film Director; Founder, FIRST International Film Festival", "宋文", "电影导演，FIRST青年电影展创始人"),
       speaker("Eugene Wang", "Abby Aldrich Rockefeller Professor of Asian Art, Harvard University", "汪悦进", "哈佛大学艺术史系洛克菲勒亚洲艺术史专席教授"),
     ],
@@ -383,6 +382,7 @@ This conversation will explore how innovations around global health flow across 
       speaker("Gene Bukhman", "Moderator; Professor of Medicine, Brigham and Women's Hospital; Associate Professor of Global Health and Social Medicine, Harvard Medical School", "Gene Bukhman", "主持人；百瀚和妇女医院医学教授，哈佛医学院全球健康与社会医学副教授"),
       speaker("Louise Liu", "Founder and CEO, Hill Research", "刘瑞华", "Hill Research 创始人、首席执行官"),
       speaker("Cathy Liu", "Vice President of Strategic Partnership, iKang Healthcare Group", "刘宁", "爱康集团策略合作副总裁"),
+      speaker("Kejun Ying", "K00 Fellow, National Institute on Aging; Stanford University; Institute for Protein Design, University of Washington", "应可钧", "美国国立衰老研究院K00研究员，斯坦福大学，华盛顿大学蛋白设计研究所"),
       speaker("Winnie Yip", "Professor of the Practice of Global Health Policy and Economics, Harvard University", "叶志敏", "哈佛大学公共卫生政策与经济教授"),
     ],
   },
@@ -411,7 +411,6 @@ As governments and corporations navigate a rapidly shifting geopolitical environ
     speakers: [
       speaker("Adam Nguyen", "Moderator; Executive Director, Sora Ventures", "阮亚当", "主持人；Sora Ventures 执行董事"),
       speaker("Xi Chen", "Full Professor and Andre Meyer Faculty Fellow in the Department of Technology, Operations, and Statistics, New York University Stern School of Business", "陈溪", "纽约大学Stern商学院Andre Meyer冠名终身正教授"),
-      speaker("Jeremy Huang", "Co-Founder, Daloopa", "黄捷", "Daloopa联合创始人"),
       speaker("Fred Ngan", "Co-Founder, Bowtie Life Insurance", "顏耀辉", "保泰人寿（Bowtie）联合创始人"),
       speaker("Yuechen Zhao", "Partner, Informed Ventures", "赵越臣", "Informed Ventures 合伙人"),
     ],
@@ -426,11 +425,10 @@ This panel brings together top leaders from fields such as technology, investmen
     descriptionZh: `在全球化格局深度调整、中国经济迈向高质量发展的新阶段，新一代的变革者正以其独特的全球视野和深刻的在地洞察，重新定义商业与社会的边界。他们不再仅是规则的遵循者，更是新范式的创造者——从AI驱动的营销革新，到国际标准的本土化落地，再到前沿科技与人文关怀的深度融合。本场分论坛汇聚了来自科技、投资、人力资源、市场营销及医疗健康等领域的杰出领袖，他们既是全球化的受益者与推动者，更是深耕中国本土实践的探索者。嘉宾们将共同探讨，在充满机遇与挑战的当下，变革者如何利用全球资源与视角，结合本土智慧与行动，塑造具有世界级竞争力的创新实践，并为中国乃至全球的商业生态注入新的活力。`,
     speakers: [
       speaker("Ally Liu", "Moderator; Founder and CEO, Influcio Ai", "刘滢", "主持人；Influcio.ai 创始人、首席执行官"),
-      speaker("Anna Danyi Chen", "Tentative; Founder and CEO, Novum Studio (Frog Social)", "陈丹怡", "待定；Novum Studio（Frog Social）创始人、首席执行官"),
-      speaker("Fiona Fang", "Co-Founder, CGL Consulting", "方玲", "上海德筑企业管理有限公司CGL联合创始人"),
       speaker("Li Li", "Founding Partner, Next Capital", "李黎", "嘉程资本创始合伙人"),
+      speaker("Dali Ma", "Founder, President, Truly Yours Inc.", "马达理", "达理知一创始人、总裁"),
       speaker("Miranda Wang", "China Managing Director, Project Management Institute", "王梦妍", "PMI中国区总裁"),
-      speaker("Hongxu Yin", "Principal Research Scientist and Research Lead at NVIDIA", "尹洪旭", "英伟达首席研究科学家"),
+      speaker("Hongxu Yin", "Principal Research Scientist and Research Lead, NVIDIA", "尹洪旭", "英伟达首席研究科学家"),
     ],
   },
   economics: {
@@ -446,7 +444,6 @@ Together, the panel will examine how U.S.-China interdependence is being renegot
     speakers: [
       speaker("Jason Furman", "Moderator; 28th Chairman, U.S. Council of Economic Advisers; Aetna Professor of the Practice of Economic Policy, Harvard University", "杰森·福尔曼", "主持人；美国经济顾问委员会前主席，哈佛大学Aetna经济政策实践教授"),
       speaker("Shenglin Ben", "Founding Dean, International Business School and Academy of Internet Finance, Zhejiang University; Former China CEO, JP Morgan Chase Bank", "贲圣林", "浙江大学国际联合商学院与金融科技研究院创始院长；摩根大通银行（中国）原行长"),
-      speaker("Lei Huang", "CEO, Tiger Brokers US", "黄磊", "美国老虎证券公司首席执行官"),
       speaker("Yasheng Huang", "Professor of Global Economics and Management, MIT Sloan School of Management", "黄亚生", "麻省理工斯隆管理学院副院长、政治经济学教授"),
       speaker("Tao Zha", "Executive Director of the Center for Quantitative Economics, Federal Reserve Bank of Atlanta; Samuel Candler Dobbs Professor of Economics, Emory University", "查涛", "亚特兰大联邦储备银行数量经济研究中心执行主任，埃默里大学Samuel Candler Dobbs经济学讲席教授"),
     ],

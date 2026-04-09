@@ -280,6 +280,14 @@ a {
   line-height: 1.6;
 }
 
+.sessionSpeakerGroups {
+  display: grid;
+  gap: 14px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
 .trackGrid {
   display: grid;
   grid-template-columns: 1fr;

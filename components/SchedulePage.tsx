@@ -125,6 +125,36 @@ export function SchedulePage() {
                                   {locale === "zh" ? session.descriptionZh : session.description}
                                 </p>
                               ) : null}
+                              {session.speakerGroups?.length ? (
+                                <div className="sessionSpeakerGroups">
+                                  {session.speakerGroups.map((group) => (
+                                    <div
+                                      key={`${session.id}-${group.label}`}
+                                      className="speakerBlock"
+                                    >
+                                      <p className="trackMetaLabel">
+                                        {locale === "zh" ? group.labelZh : group.label}
+                                      </p>
+                                      <div className="speakerList">
+                                        {group.speakers.map((speaker) => (
+                                          <p
+                                            key={`${session.id}-${group.label}-${speaker.name}-${speaker.title}`}
+                                            className="speakerItem"
+                                            lang={locale === "zh" ? "zh-Hans" : undefined}
+                                          >
+                                            <strong className="speakerName">
+                                              {locale === "zh" ? speaker.nameZh : speaker.name}
+                                            </strong>
+                                            {locale === "zh"
+                                              ? `（${speaker.titleZh}）`
+                                              : ` (${speaker.title})`}
+                                          </p>
+                                        ))}
+                                      </div>
+                                    </div>
+                                  ))}
+                                </div>
+                              ) : null}
                             </>
                           )}
                         </div>
