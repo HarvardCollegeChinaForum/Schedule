@@ -362,7 +362,7 @@ From retrospection to prospection, this panel will explore the cultural lineage 
 
 从回望到展望，本场分论坛将从历史与当下的视角讨论中国电影的文化血脉与未来表达。`,
     speakers: [
-      speaker("Icey Lin", "Moderator; Ph.D. Student in Department of History of Art and Architecture, Harvard University", "林冰洁", "主持人；哈佛大学艺术与建筑历史系博士生"),
+      speaker("Icey Lin", "Moderator; Teaching Fellow for East Asian Cinema; Art History PhD Student, Harvard University", "林冰洁", "主持人；哈佛大学东亚电影史课程教学研究员、艺术史系博士在读"),
       speaker("Jinying Li", "Assistant Professor of Modern Culture and Media, Brown University; Co-Writer, Big Fish and Begonia", "Jinying Li", "布朗大学现代文化与媒体系助理教授，《大鱼海棠》联合创作者"),
       speaker("Max Ren", "President, Eastern TV (US); Director, SMG North America", "任美星", "上海文化广播影视集团（SMG）东方卫视美国运营总监、美国东方广播影视公司总裁"),
       speaker("Wen Song", "Film Director; Founder, FIRST International Film Festival", "宋文", "电影导演，FIRST青年电影展创始人"),
