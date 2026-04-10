@@ -107,9 +107,9 @@ export const venues: Venue[] = [
   {
     id: "yenching-230",
     label: "Yenching Auditorium",
-    labelZh: "Yenching Auditorium",
+    labelZh: "Yenching Institute",
     shortLabel: "Yenching Auditorium",
-    shortLabelZh: "Yenching Auditorium",
+    shortLabelZh: "Yenching Institute",
     address: "2 Divinity Ave, Cambridge, MA 02138",
     embedQuery: "Harvard-Yenching Institute 230 Cambridge MA",
     coordinates: { lat: 42.3729, lng: -71.1157 },
@@ -122,6 +122,16 @@ export const venues: Venue[] = [
     shortLabelZh: "Science Center",
     address: "1 Oxford St, Cambridge, MA 02138",
     embedQuery: "Harvard Science Center Cambridge MA",
+    coordinates: { lat: 42.3763, lng: -71.1167 },
+  },
+  {
+    id: "science-center-arcade",
+    label: "Science Center Arcade",
+    labelZh: "Science Center Arcade",
+    shortLabel: "Science Center Arcade",
+    shortLabelZh: "Science Center Arcade",
+    address: "1 Oxford St, Cambridge, MA 02138",
+    embedQuery: "Harvard Science Center Arcade Cambridge MA",
     coordinates: { lat: 42.3763, lng: -71.1167 },
   },
   {
@@ -285,11 +295,11 @@ export const schedule: DaySchedule[] = [
     sessions: [
       {
         id: "sun-check-in",
-        time: "08:00 - 15:00",
+        time: "08:00 - 16:00",
         title: "Registration",
         titleZh: "登记",
         type: "check-in",
-        venueId: "science-center",
+        venueId: "science-center-arcade",
       },
       {
         id: "sun-pitch",

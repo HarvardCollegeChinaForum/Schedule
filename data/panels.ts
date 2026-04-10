@@ -58,6 +58,12 @@ This panel brings together leading journalists and media leaders to examine how 
     descriptionZh: `在地缘政治博弈日趋白热化、公众对新闻的信任持续流失、媒体生态走向深度碎片化的三重背景下，涉华报道已不再仅是信息传递，而成为塑造全球公众如何理解中国的核心变量。本场分论坛汇聚海内外顶尖记者与媒体领袖，聚焦媒体机构的制度调适、读者习惯的结构性迁移、以及人工智能与数字平台带来的技术颠覆，深入探讨涉华报道在变局中的演变路径。嘉宾们将结合一线实践，剖析面向全球报道中国时所面临的如算法偏见、信息战、跨文化误读等新兴议题，以及信源获取、立场平衡、事实核查等经典挑战，并分享应对之道与前瞻思考。`,
     speakers: [
       speaker(
+        "Frank Zhou",
+        "Moderator; Associate Producer, Face-Off: U.S. vs China; Co-President Emeritus, Harvard College China Forum",
+        "周欣哲",
+        "主持人；Face-Off: U.S. vs China 博客助理制片人，哈佛中国论坛前联席主席",
+      ),
+      speaker(
         "Charles Hutzler",
         "Former China Bureau Chief, The Wall Street Journal; Former China Bureau Chief, The Associated Press",
         "韩村乐",
@@ -103,7 +109,7 @@ Titled "Chinese Wisdom and Strategic Innovation," this panel brings together str
   },
   bridges: {
     title: "New Centers and Bridges of Innovation",
-    titleZh: "再造桥梁：香港的创新时代",
+    titleZh: "再造桥梁与创新",
     venueId: "yenching-230",
     description: `This panel explores Hong Kong’s unique role as a bridge between China and the global economy. Drawing on the leadership experience of our discussants across international markets, the discussion will examine how Hong Kong’s particular history and culture, legal framework, financial infrastructure, and global connectivity position it as a critical gateway for the world’s engagement with China. Panelists will share insights on navigating differences across business environments, fostering international partnerships, and leveraging Hong Kong’s status as a hub for capital, talent, and innovation. Beyond business, the conversation will also touch on Hong Kong’s cultural hybridity—where East meets West—and how this distinct identity enhances its ability to facilitate trust and collaboration. Attendees will gain a deeper understanding of how Hong Kong continues to evolve as a dynamic intermediary, enabling companies and investors to access opportunities in China while remaining firmly connected to the global marketplace.`,
     descriptionZh: `本场分论坛聚焦香港作为连接中国与全球经济桥梁的独特角色。依托各位嘉宾在国际市场中积累的丰富领导经验，讨论将深入剖析香港独特的历史文化、法律体系、金融基础设施以及全球联通能力，如何共同塑造其作为世界与中国互动关键门户的战略地位。
@@ -127,7 +133,7 @@ Titled "Chinese Wisdom and Strategic Innovation," this panel brings together str
   },
   latinAmerica: {
     title: "China and Latin America",
-    titleZh: "中拉关系与发展",
+    titleZh: "中国-拉美关系与发展",
     venueId: "nw-b101",
     description: `Latin America is emerging as a central arena for global influence, sitting at the intersection of great power interests. With the United States and China both increasingly invested in Latin America, understanding the region’s dynamics will be essential to analyzing the geopolitical and economic balance of power.
 
@@ -235,7 +241,7 @@ This Sustainability Panel convenes leaders in new energy, carbon research, and i
   },
   africa: {
     title: "China and Africa",
-    titleZh: "中非贸易合作",
+    titleZh: "中非贸易与合作",
     venueId: "yenching-230",
     description: `At a moment of geopolitical uncertainty, and on the eve of China’s landmark zero-tariff policy for 53 African nations, this panel convenes leading scholars, policymakers, and investors to reexamine the evolving dynamics of China-Africa relations. Against a backdrop of shifting Western trade frameworks and rising great-power rivalry, the timing invites a fresh assessment of where this relationship stands and where it is headed. The discussion brings together perspectives from law, development research, public finance, and international investment to explore how partnerships between African nations and China are shaping economic growth, infrastructure development, and financial integration across the continent. Drawing on firsthand experience, speakers will assess both the opportunities and challenges of these engagements, including debt sustainability, industrialization, and local capacity building. The conversation will also consider the broader geopolitical and historical context, highlighting how China-Africa ties are influencing global development paradigms. Attendees will gain nuanced insights into the strategic, economic, and institutional dimensions of this relationship, as well as practical considerations for fostering more balanced, transparent, and mutually beneficial partnerships in the years ahead.`,
     descriptionZh: `在地缘政治充满不确定性的当下，恰逢中国对53个非洲国家实施零关税政策前夕，本场分论坛汇聚知名学者、政策制定者与投资界人士，共同重新审视中非关系的最新发展态势。面对西方贸易框架的调整与大国竞争的加剧，这一特殊时点促使我们重新思考中非关系究竟处于何种阶段，又将走向何方。
@@ -383,7 +389,7 @@ This panel brings together a group of pioneers that are founding and investing i
   },
   globalHealth: {
     title: "China's Role in Global Health",
-    titleZh: "公共卫生",
+    titleZh: "中国公共卫生经验的启示与局限",
     venueId: "science-d",
     description: `Global health is increasingly shaped by how countries learn from one another, and China has become an important part of that exchange. As one of the world’s leaders in healthcare innovation, roll-out, and technological scaling, analyzing how China’s health reforms, digital health advancements, and growing international partnerships connect to wider challenges such as access interlinked with system resilience is becoming increasingly important to understanding the future of healthcare.
 
