@@ -398,7 +398,6 @@ This conversation will explore how innovations around global health flow across 
 
 本场对话将探讨全球健康领域的创新如何跨越国界流动，同时触及气候变化对人类健康的影响。中国为全球健康议题带来了哪些独特视角？全球健康共同体的态度近年来发生了怎样的转变？这些趋势又将如何塑造该领域的未来图景？`,
     speakers: [
-      speaker("Gene Bukhman", "Moderator; Professor of Medicine, Brigham and Women's Hospital; Associate Professor of Global Health and Social Medicine, Harvard Medical School", "Gene Bukhman", "主持人；百瀚和妇女医院医学教授，哈佛医学院全球健康与社会医学副教授"),
       speaker("Louise Liu", "Founder and CEO, Hill Research", "刘瑞华", "Hill Research 创始人、首席执行官"),
       speaker("Cathy Liu", "Vice President of Strategic Partnership, iKang Healthcare Group", "刘宁", "爱康集团策略合作副总裁"),
       speaker("Kejun Ying", "K00 Fellow, National Institute on Aging; Stanford University; Institute for Protein Design, University of Washington", "应可钧", "美国国立衰老研究院K00研究员，斯坦福大学，华盛顿大学蛋白设计研究所"),
