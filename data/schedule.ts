@@ -111,7 +111,7 @@ export const venues: Venue[] = [
     shortLabel: "Yenching Auditorium",
     shortLabelZh: "Yenching Institute",
     address: "2 Divinity Ave, Cambridge, MA 02138",
-    embedQuery: "Harvard-Yenching Institute 230 Cambridge MA",
+    embedQuery: "Harvard-Yenching Institute Cambridge MA",
     coordinates: { lat: 42.3729, lng: -71.1157 },
   },
   {
